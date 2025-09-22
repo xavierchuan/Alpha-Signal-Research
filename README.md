@@ -1,32 +1,34 @@
-# Alpha Signal Research: Moving Average Crossovers
+# Alpha-Signal-Research
 
-This project analyzes the performance of SMA/EMA crossover signals under varying volatility regimes across BTC, ETH, and AAPL data.  
-It evaluates **alpha decay**, **regime-dependence**, and in-sample vs out-of-sample performance.  
+A lightweight research project for backtesting simple trading strategies (e.g., SMA crossover) on financial time series.
 
 ## Features
-- Generate SMA/EMA crossover signals with configurable windows.
-- Backtest trading strategies on BTC, ETH, and AAPL.
-- Regime analysis (volatility clustering, performance by cycle).
-- Visualization of signals, returns, and breakdowns.
-- Export structured reports (Markdown + plots + metrics).
+- Data loading from Yahoo Finance
+- Signal generation (SMA crossover strategy)
+- Backtesting with equity curve tracking
+- Performance evaluation (Sharpe, Max Drawdown, Annual Return, etc.)
+- Visualization of signals and equity curve
+- Automatic report generation (Markdown)
 
-## Project Structure
-- `src/`: Core implementation (signals, backtest, evaluation, visualization).
-- `data/`: Raw and processed datasets.
-- `notebooks/`: Research and prototyping.
-- `results/`: Backtest results and diagnostic plots.
-
-## Example Usage
+## Installation
 ```bash
-python src/signal_generation.py --asset BTC --fast 10 --slow 50
-python src/backtest.py --asset ETH --strategy crossover --start 2020-01-01 --end 2024-01-01
+git clone https://github.com/xavierchuan/Alpha-Signal-Research.git
+cd Alpha-Signal-Research
+pip install -r requirements.txt
+```
 
-Requirements
-pandas
-numpy
-matplotlib
-TA-Lib
-yfinance
+Usage
 
-👨‍💻 Author: Xiaochuan Li
-📂 GitHub: xavierchuan
+Run the demo backtest:
+python tests/run_demo.py
+
+Results will be saved under results/:
+	•	Plots in results/plots/
+	•	Reports in results/reports/
+Example Results
+    Trading Signals
+    Equity Curve
+    Backtest Report
+    
+    Example report is saved under:
+    results/reports/backtest_report.md
