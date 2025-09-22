@@ -1,5 +1,4 @@
 # Alpha-Signal-Research
-# Alpha-Signal-Research
 
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/github/license/xavierchuan/Alpha-Signal-Research)](LICENSE)
